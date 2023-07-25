@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --secondary-color: #DA8519;
+  --font-color-highlight: #24343B;
+  --font-family-paragraphs: 'Monsterrat', sans-serif;
+  --font-family-titles: 'Poppins', sans-serif
+}
+
+[data-theme= 'dark'] {
+  --main-color: #151516;
+  --font-color: white
+}
+
+[data-theme= 'light'] {
+  --main-color: #e5e4f0;
+  --font-color: black
+}

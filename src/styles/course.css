@@ -1,0 +1,19 @@
+.course {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 15px;
+}
+img {
+  width: 100%;
+}
+h2, strong {
+  color: var(--secondary-color);
+}
+button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 5px;
+}
