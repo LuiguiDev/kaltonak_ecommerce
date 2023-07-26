@@ -1,4 +1,4 @@
-import { AboutCourseTypes } from "../types/types"
+import { AboutCourseTypes } from "../types and consts/types"
 import '../styles/course.css'
 
 export const Course: React.FC<AboutCourseTypes> = ({ image, title, description, schedules, startingDate, teacher, sesions, cost }) => {

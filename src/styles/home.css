@@ -1,0 +1,15 @@
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 70px;
+}
+
+.home_image {
+  width: 100%;
+}
+
+.about {
+  display: grid;
+  padding: 50px;
+  align-content: center;
+}

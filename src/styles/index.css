@@ -5,8 +5,9 @@
 
 :root {
   --secondary-color: #DA8519;
+  --third-color: #630714;
   --font-color-highlight: #24343B;
-  --font-family-paragraphs: 'Monsterrat', sans-serif;
+  --font-family-paragraphs: 'Montserrat', sans-serif;
   --font-family-titles: 'Poppins', sans-serif
 }
 
@@ -18,4 +19,9 @@
 [data-theme= 'light'] {
   --main-color: #e5e4f0;
   --font-color: black
+}
+
+/* The icon size should never change along the page, this is why is here amid constants */
+.kaltonak_icon {
+  width: 40px;
 }

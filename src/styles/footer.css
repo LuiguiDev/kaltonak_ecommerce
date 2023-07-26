@@ -1,0 +1,40 @@
+#Contacto {
+  display: flex;
+  flex-direction: column;
+  background-color:var(--secondary-color);
+  padding: 30px;
+  gap: 10px;
+}
+
+.footer_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.kaltonak_name {
+  color: var(--third-color);
+}
+
+.contact {
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer_disclaimer {
+  display: inline;
+  margin: auto;
+}

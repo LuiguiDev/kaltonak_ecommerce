@@ -1,4 +1,4 @@
-import { theme_type } from '../types/types'
+import { theme_type } from '../types and consts/types'
 import { useEffect, useState } from 'react'
 
 export function useTheme() {
