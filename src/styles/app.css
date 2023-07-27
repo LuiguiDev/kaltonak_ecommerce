@@ -16,7 +16,7 @@ p,span,a{
 
 .courses_section {
   display: flex;
-  width: 90vw;
+  width: 85vw;
   flex-direction: column;
   align-items: center;
   margin: 70px auto;
@@ -31,4 +31,5 @@ p,span,a{
   list-style: none;
   display: grid;
   gap: 30px;
+  padding: 0;
 }

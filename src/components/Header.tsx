@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { useTheme } from "../hooks/useTheme"
 import '../styles/header.css'
 
@@ -16,29 +17,45 @@ const NavButton: React.FC<NavButtonProps> = ({ text, id }) => {
   )
 }
 
-export const Header = () => {
+interface HeaderProps {
+  device: string
+}
+
+export const Header: React.FC<HeaderProps> = ({ device }) => {
   const {theme, changeTheme} = useTheme()
+  const [menuDisplayed, setMenuDisplayed] = useState<boolean>(false)
 
   function manageChangeTheme () {
     if(theme === 'dark') changeTheme('light')
     else changeTheme('dark')
   }
+  function displayMenu () {
+    const prevState = structuredClone(menuDisplayed)
+    setMenuDisplayed(!prevState)
+  }
 
   return (
-  <header>
-    <div className="logo">
-      <img src="./src/images/icon.jpg" alt="Icono de KALTONAK" className='kaltonak_icon' />
-      <h1 className="kaltonak">KALTONAK</h1>
-    </div>
-    <nav className="header_nav">
-      <ul className="header_ul">
-        <NavButton text="Inicio" id={crypto.randomUUID()} />
-        <NavButton text="Cursos" id={crypto.randomUUID()} />
-        <NavButton text="Contacto" id={crypto.randomUUID()} />
-      </ul>
-    </nav>
-    <button className="toggle_theme" onClick={manageChangeTheme}>{theme === 'dark'? '🌙' : '☀️'}</button>
-  </header>
-
+    <header>
+      <div className="logo">
+        <img src="./src/images/icon.jpg" alt="Icono de KALTONAK" className='kaltonak_icon' />
+        <h1 className="kaltonak">KALTONAK</h1>
+      </div>
+      {
+        menuDisplayed &&        
+        <nav className="header_nav">
+          <ul className="header_ul">
+            <NavButton text="Inicio" id={crypto.randomUUID()} />
+            <NavButton text="Cursos" id={crypto.randomUUID()} />
+            <NavButton text="Contacto" id={crypto.randomUUID()} />
+            <button className="toggle_theme" onClick={manageChangeTheme}>{theme === 'dark'? '🌙' : '☀️'}</button>
+          </ul>
+        </nav>
+      }
+      {device === 'mobile' &&
+        <button className="manu" onClick={displayMenu} >
+          <i className="fas fa-bars"></i>
+        </button>
+      }
+    </header>
   )
 }

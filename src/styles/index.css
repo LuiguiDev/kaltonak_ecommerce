@@ -12,16 +12,12 @@
 }
 
 [data-theme= 'dark'] {
-  --main-color: #151516;
+  --main-color-v1: #151516;
+  --main-color: #24343B;
   --font-color: white
 }
 
 [data-theme= 'light'] {
   --main-color: #e5e4f0;
   --font-color: black
-}
-
-/* The icon size should never change along the page, this is why is here amid constants */
-.kaltonak_icon {
-  width: 40px;
 }
