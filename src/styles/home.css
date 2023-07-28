@@ -1,15 +1,62 @@
 .home {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 70px;
+  height: calc(100vh - (var(--header-height-mobile) * 2));
+  width: 100vw;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 2fr 1fr;
 }
 
 .home_image {
-  width: 100%;
+  background-image: url('https://i.ibb.co/BL5xcrZ/almena.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
+
 .about {
-  display: grid;
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
   align-content: center;
+  padding: 50px;
+}
+
+.see_courses {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  width: fit-content;
+  margin: auto;
+}
+
+.see_courses a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (width <= 768px) {
+  .home {
+    margin-top: var(--header-height-mobile);
+  }
+  .about {
+    padding: 0 30px;
+    text-align: center;
+  }
+}
+
+@media (width > 768px) {
+  .home {
+    margin-top: var(--header-height-desktop);
+  }
+  .about {
+    justify-content: center;
+    gap: 30px;
+  }
+  .see_courses {
+    margin: 0;
+  }
+  h1 {
+    color: var(--secondary-color);
+  }
 }

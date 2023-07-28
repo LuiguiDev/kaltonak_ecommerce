@@ -8,16 +8,18 @@
   --third-color: #630714;
   --font-color-highlight: #24343B;
   --font-family-paragraphs: 'Montserrat', sans-serif;
-  --font-family-titles: 'Poppins', sans-serif
+  --font-family-titles: 'Poppins', sans-serif;
+  --header-height-mobile: 65px;
+  --header-height-desktop: 75px
 }
 
 [data-theme= 'dark'] {
   --main-color-v1: #151516;
   --main-color: #24343B;
-  --font-color: white
+  --font-color: white;
 }
 
 [data-theme= 'light'] {
   --main-color: #e5e4f0;
-  --font-color: black
+  --font-color: black;
 }

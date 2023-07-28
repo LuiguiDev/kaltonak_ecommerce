@@ -2,18 +2,41 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  padding: 10px;
-  border: 2px solid var(--secondary-color);
+  padding: 20px;
+  border: 1px solid var(--secondary-color);
   border-radius: 15px;
 }
+
+.course_details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 img {
   width: 100%;
 }
 h2, strong {
   color: var(--secondary-color);
 }
-button {
+
+.course_addToCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add_toCart_btn {
   background-color: var(--secondary-color);
   color: white;
-  padding: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
 }

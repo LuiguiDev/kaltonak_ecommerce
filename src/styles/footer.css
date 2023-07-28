@@ -45,3 +45,18 @@ a {
   display: inline;
   margin: auto;
 }
+
+@media (width <= 768px) {
+  #Contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact {
+    align-items: flex-start;
+  }
+  .social_media {
+    display: flex;
+    flex-direction: column;
+  }
+}

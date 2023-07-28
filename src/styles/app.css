@@ -1,9 +1,12 @@
 html {
   font-size: 16px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 body {
-  background-color: var(--main-color);
+  background-color: var(--main-color-v1);
   color: var(--font-color);
+  width: 100vw;
 }
 
 h1, h2, h3 {
@@ -12,6 +15,7 @@ h1, h2, h3 {
 
 p,span,a{
   font-family: var(--font-family-paragraphs);
+  color: var(--font-color);
 }
 
 .courses_section {
@@ -19,7 +23,7 @@ p,span,a{
   width: 85vw;
   flex-direction: column;
   align-items: center;
-  margin: 70px auto;
+  margin: 60px auto;
   gap: 30px;
 }
 

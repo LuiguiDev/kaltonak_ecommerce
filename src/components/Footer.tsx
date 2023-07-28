@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className='footer_content'>
         <div className="footer_logo">
           <img
-            src="./src/images/icon.jpg"
+            src="https://i.ibb.co/NWQZM94/icon.jpg"
             alt="Icono de kaltonak"
             className='kaltonak_icon' />
           <h2 className='kaltonak_name' >KALTONAK</h2>
