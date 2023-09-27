@@ -15,10 +15,20 @@ header {
 .on_scroll {
   background-color: var(--secondary-color);
 }
+.on_scroll .header_li :hover {
+  color: white
+}
+.heading_on_scroll {
+  color: white;
+}
 
 button {
   background-color: transparent;
   border: none;
+}
+
+button :hover {
+  color: var(--main-color-v1);
 }
 
 i {
@@ -71,6 +81,7 @@ h1 {
   overflow: hidden;
 }
 
+
 .underline {
   display: block;
   position: absolute;
@@ -86,6 +97,10 @@ h1 {
   gap: 10px;
   background-color: transparent;
   border: none;
+}
+
+.toggle_theme :hover {
+  color: var(--secondary-color);
 }
 
 @media (width <= 768px) {

@@ -13,6 +13,12 @@
   background-position: center;
 }
 
+.shadow {
+  filter: drop-shadow(-5px 5px 5px rgb(0, 0, 0, 0.2))
+          drop-shadow(-15px 15px 15px rgb(0, 0, 0, 0.2));
+  z-index: -1;
+}
+
 
 .about {
   display: flex;
@@ -49,14 +55,26 @@
   .home {
     margin-top: var(--header-height-desktop);
   }
+  h1 {
+    color: var(--secondary-color);
+  }
   .about {
     justify-content: center;
     gap: 30px;
+    align-items: center;
+    padding: 0;
+    max-width: 500px;
+  }
+  .about h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .about h3 {
+    font-size: 1.5rem;
+    text-align: center;
   }
   .see_courses {
-    margin: 0;
-  }
-  h1 {
-    color: var(--secondary-color);
+    margin: 0 auto;
+    font-size: 1.5rem;
   }
 }

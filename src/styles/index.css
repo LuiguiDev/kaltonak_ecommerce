@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --secondary-color: #DA8519;
   --third-color: #630714;
@@ -20,6 +24,6 @@
 }
 
 [data-theme= 'light'] {
-  --main-color: #e5e4f0;
+  --main-color-v1: #e5e4f0;
   --font-color: black;
 }

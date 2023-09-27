@@ -26,6 +26,7 @@ export const Header: React.FC<HeaderProps> = () => {
   const [menuDisplayed, setMenuDisplayed] = useState<boolean>(false)
   const navRef = useRef<HTMLElement>(null)
   const menuRef = useRef<HTMLElement>(null)
+  const tilte = useRef<HTMLHeadingElement>(null)
 
   function manageChangeTheme () {
     if(theme === 'dark') changeTheme('light')
@@ -40,6 +41,7 @@ export const Header: React.FC<HeaderProps> = () => {
   window.addEventListener('scroll', () => {
     if(navRef.current) {
       navRef.current.classList.toggle('on_scroll', window.scrollY > 0)
+      tilte.current?.classList.toggle('heading_on_scroll', window.scrollY > 0)
     }
   })
 
@@ -50,7 +52,7 @@ export const Header: React.FC<HeaderProps> = () => {
       </button>
       <div className="logo">
         <img src="https://i.ibb.co/NWQZM94/icon.jpg" alt="Icono de KALTONAK" className='kaltonak_icon' />
-        <h1 className="kaltonak" >KALTONAK</h1>
+        <h1 className="kaltonak" ref={tilte} >KALTONAK</h1>
       </div>
       <nav className="header_nav" ref={menuRef} >
         <ul className="header_ul">
